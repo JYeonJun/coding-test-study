@@ -43,9 +43,11 @@ public class S1_2468 {
                         cnt += bfs(j, i, height);
                     }
                 }
-                max = Math.max(max, cnt);
             }
+            if (cnt == 0) cnt = 1;
+            max = Math.max(max, cnt);
         }
+
         System.out.println(max);
     }
 
